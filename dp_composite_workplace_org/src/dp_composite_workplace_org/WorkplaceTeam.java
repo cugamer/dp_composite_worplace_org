@@ -1,6 +1,7 @@
 package dp_composite_workplace_org;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class WorkplaceTeam extends WorkplaceAssetComponent {
 	String name;
@@ -36,5 +37,21 @@ public class WorkplaceTeam extends WorkplaceAssetComponent {
 
 	public String getDescription() {
 		return description;
+	}
+	
+	public String print(){
+		System.out.println(getName() + "\n" +
+				getDescription() + "\n");
+		Iterator<WorkplaceAssetComponent> iterator = components.iterator();
+		while(iterator.hasNext()){
+			WorkplaceAssetComponent component = iterator.next();
+			component.print();
+		}
+		
+		return "";
+	}
+	
+	public ArrayList<WorkplaceAssetComponent> getComponents(){
+		return components;
 	}
 }

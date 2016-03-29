@@ -38,4 +38,8 @@ public abstract class WorkplaceAssetComponent {
 	public String print(){
 		throw new UnsupportedOperationException();
 	}
+	
+	public ArrayList<WorkplaceAssetComponent> getComponents(){
+		throw new UnsupportedOperationException();
+	}
 }
