@@ -1,14 +1,9 @@
 package dp_composite_workplace_org;
 
-import java.util.ArrayList;
-
 public abstract class WorkplaceAssetComponent {
-//	String name;
-//	String description;
-//	ArrayList<WorkplaceAssetComponent> components = new ArrayList<>();
+
 	
 	public void add(WorkplaceAssetComponent component){
-//		components.add(component);
 		throw new UnsupportedOperationException();
 	}
 	
@@ -25,6 +20,14 @@ public abstract class WorkplaceAssetComponent {
 	}
 	
 	public String getDescription(){
+		throw new UnsupportedOperationException();
+	}
+	
+	public int getSSN(){
+		throw new UnsupportedOperationException();
+	}
+	
+	public double getYearsSeinority(){
 		throw new UnsupportedOperationException();
 	}
 }
