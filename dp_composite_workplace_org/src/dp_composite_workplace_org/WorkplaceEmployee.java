@@ -29,10 +29,10 @@ public class WorkplaceEmployee extends WorkplaceAssetComponent {
 		return yearsSeinority;
 	}
 	
-	public String print(){
-		return("Employee name: " + name + "\n" +
-			   "Employee description " + description + "\n" +
-			   "Employee ssn " + ssn + "\n" +
-			   "Employee seinority " + yearsSeinority);
+	public void print(){
+		System.out.println("Employee name: " + name);
+		System.out.println("Employee description " + description);
+		System.out.println("Employee ssn " + ssn);
+		System.out.println("Employee seinority " + yearsSeinority + "\n");
 	}
 }

@@ -35,7 +35,7 @@ public abstract class WorkplaceAssetComponent {
 		throw new UnsupportedOperationException();
 	}
 	
-	public String print(){
+	public void print(){
 		throw new UnsupportedOperationException();
 	}
 	

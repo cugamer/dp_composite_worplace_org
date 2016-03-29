@@ -39,7 +39,7 @@ public class WorkplaceTeam extends WorkplaceAssetComponent {
 		return description;
 	}
 	
-	public String print(){
+	public void print(){
 		System.out.println(getName() + "\n" +
 				getDescription() + "\n");
 		Iterator<WorkplaceAssetComponent> iterator = components.iterator();
@@ -47,8 +47,6 @@ public class WorkplaceTeam extends WorkplaceAssetComponent {
 			WorkplaceAssetComponent component = iterator.next();
 			component.print();
 		}
-		
-		return "";
 	}
 	
 	public ArrayList<WorkplaceAssetComponent> getComponents(){
