@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class WorkplaceTeam extends WorkplaceAssetComponent {
 	String name;
 	String description;
-	ArrayList<WorkplaceAssetComponent> components = new ArrayList<>();
+	public ArrayList<WorkplaceAssetComponent> components = new ArrayList<>();
 
 	public WorkplaceTeam(String name, String description){
 		this.name = name;
@@ -14,6 +14,12 @@ public class WorkplaceTeam extends WorkplaceAssetComponent {
 	
 	public void add(WorkplaceAssetComponent component){
 		components.add(component);
+	}
+	
+	public void add(WorkplaceAssetComponent[] component){
+		for(int i = 0; i < component.length; i++){
+			add(component[i]);
+		}
 	}
 	
 	public void remove(WorkplaceAssetComponent component){

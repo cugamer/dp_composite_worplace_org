@@ -1,7 +1,13 @@
 package dp_composite_workplace_org;
 
+import java.util.ArrayList;
+
 public abstract class WorkplaceAssetComponent {
 	public void add(WorkplaceAssetComponent component){
+		throw new UnsupportedOperationException();
+	}
+	
+	public void add(WorkplaceAssetComponent[] component){
 		throw new UnsupportedOperationException();
 	}
 	
@@ -26,6 +32,10 @@ public abstract class WorkplaceAssetComponent {
 	}
 	
 	public double getYearsSeinority(){
+		throw new UnsupportedOperationException();
+	}
+	
+	public String print(){
 		throw new UnsupportedOperationException();
 	}
 }
