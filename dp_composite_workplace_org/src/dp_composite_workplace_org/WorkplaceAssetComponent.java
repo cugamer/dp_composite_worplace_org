@@ -1,8 +1,6 @@
 package dp_composite_workplace_org;
 
 public abstract class WorkplaceAssetComponent {
-
-	
 	public void add(WorkplaceAssetComponent component){
 		throw new UnsupportedOperationException();
 	}
