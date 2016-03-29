@@ -28,6 +28,8 @@ public class WorkplaceOrgControl {
 		marketing.add(new WorkplaceAssetComponent[] {emp7, emp8, emp9});
 		
 		webDept.print();
+		System.out.println("---------------------------------");
+		marketing.print();
 	}
 
 }
