@@ -27,9 +27,11 @@ public class WorkplaceOrgControl {
 		WorkplaceAssetComponent emp9 = new WorkplaceEmployee("nash", "Princton grad", "555-55-55553", 4.7);
 		marketing.add(new WorkplaceAssetComponent[] {emp7, emp8, emp9});
 		
-		webDept.print();
+		OrgEmployeeManager manager = new OrgEmployeeManager(webDept, marketing);
+		
+		manager.printAllWebTeams();
 		System.out.println("---------------------------------");
-		marketing.print();
+		manager.printMarketingTeam();
 	}
 
 }
